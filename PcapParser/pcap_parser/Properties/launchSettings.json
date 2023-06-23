@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "pcap_parser": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\Programming\\PcapParser\\pcap_parser\\PcapParser\\pcap_parser\\captureFile.pcap\r\ntcp"
+    }
+  }
+}
