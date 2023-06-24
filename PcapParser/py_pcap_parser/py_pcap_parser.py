@@ -1,4 +1,4 @@
-from statistics import mean, median
+from statistics import median, mean
 import pyshark
 import sys
 import json
@@ -61,10 +61,14 @@ class PcapParser:
 
         self.start_pcap_filereader(filepath, packet_filter)
         
+        if(len(self.__length_list) == 0 or len(self.__time_list) == 0):
+            print("No such packet with input filter")
+            exit(1)
+
         return self.generate_pcap_stats()
         
     def start_pcap_filereader(self, filepath, packet_filter):
-        capture = pyshark.FileCapture(filepath, display_filter = packet_filter)
+        capture = pyshark.FileCapture(input_file = filepath, display_filter = packet_filter)
         capture.apply_on_packets(self.handle_packet)
 
     def handle_packet(self, packet):
@@ -86,8 +90,10 @@ class PcapParser:
         self.__length_list.sort()
         self.__time_list.sort()
 
-        length_stat = LengthStat(self.__length_list[0], self.__length_list[-1], mean(self.__length_list), median(self.__length_list))
-        time_stat = TimeStat(self.__time_list[0], self.__time_list[-1], mean(self.__time_list), median(self.__time_list))
+        length_stat = LengthStat(self.__length_list[0], self.__length_list[-1], 
+                                 round(mean(self.__length_list), 2), round(median(self.__length_list), 2))
+        time_stat = TimeStat(self.__time_list[0], self.__time_list[-1], 
+                                 round(mean(self.__time_list), 2), round(median(self.__time_list), 2))
 
         return PcapStats(length_stat, time_stat)
 

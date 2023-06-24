@@ -12,7 +12,7 @@
     <Name>py_pcap_parser</Name>
     <RootNamespace>py_pcap_parser</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>"D:\Programming\PcapParser\pcap_parser\PcapParser\pcap_parser\captureFile.pcap" "tcp"</CommandLineArguments>
+    <CommandLineArguments>"D:\Programming\PcapParser\pcap_parser\PcapParser\pcap_parser\captureFile.pcap" "frame.len &lt; 50"</CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
