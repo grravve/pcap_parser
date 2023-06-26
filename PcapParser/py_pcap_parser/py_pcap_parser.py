@@ -62,7 +62,7 @@ class PcapParser:
         self.start_pcap_filereader(filepath, packet_filter)
         
         if(len(self.__length_list) == 0 or len(self.__time_list) == 0):
-            print("No such packet with input filter")
+            print("No such packets with input filter")
             exit(1)
 
         return self.generate_pcap_stats()

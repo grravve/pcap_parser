@@ -1,14 +1,14 @@
 {
  "LengthStat": {
   "min_length": 54,
-  "max_length": 143,
-  "average_length": 77.68,
-  "median_length": 78
+  "max_length": 342,
+  "average_length": 101.87,
+  "median_length": 78.0
  },
  "TimeStat": {
   "min_time": 0.015,
-  "max_time": 2843.997,
-  "average_time": 268.09,
-  "median_time": 13.93
+  "max_time": 1463.544,
+  "average_time": 221.87,
+  "median_time": 16.16
  }
 }

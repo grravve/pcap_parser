@@ -18,7 +18,7 @@ namespace PcapParser
             var jsonOptions = new JsonSerializerOptions { WriteIndented = true, IncludeFields = true };
             string jsonString = SerializePCAPStatsToJSON(parser.GetParserData(), jsonOptions);
 
-            string filePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/output.json";
+            string filePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\output.json";
 
             File.WriteAllText(filePath, jsonString);
 

@@ -50,6 +50,12 @@ namespace PcapParser
             _captureFileReader.Capture();
             _captureFileReader.Close();
 
+            if(_packetsIntervals.Count == 0 || _packetsLength.Count == 0)
+            {
+                Console.WriteLine("No such packets with input filter");
+                Environment.Exit(-1);
+            }
+
             GenerateStats();            
         }
 
