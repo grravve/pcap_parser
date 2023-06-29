@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>4ab302b8-a268-4680-8b68-fd78fed39d47</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>py_pcap_parser.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,7 +24,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="py_pcap_parser.py" />
+    <Compile Include="main.py" />
+    <Compile Include="pcap_serializer.py" />
+    <Compile Include="pcap_parser.py" />
+    <Compile Include="pcap_stats.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
