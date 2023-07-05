@@ -12,7 +12,7 @@
     <Name>py_pcap_parser</Name>
     <RootNamespace>py_pcap_parser</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>"D:\Programming\PcapParser\pcap_parser\PcapParser\pcap_parser\captureFile.pcap" "frame.len &lt; 50"</CommandLineArguments>
+    <CommandLineArguments>"D:\Programming\PcapParser\pcap_parser\PcapParser\test_data\225d9407-10c1-11ee-aa5f-f02f741caea0.pcap" "D:\Programming\PcapParser\pcap_parser\PcapParser\test_data\225d9407-10c1-11ee-aa5f-f02f741caea0.json"</CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

@@ -4,14 +4,20 @@ from pcap_parser import PcapParser
 from pcap_serializer import SerializerPcapToJson
 
 def main():
+    # input: pcap_path, json_path
     _input = sys.argv
-    parser = PcapParser()
-    serializerStatsToJson = SerializerPcapToJson()
-    
-    statistics = parser.parse(_input)
-    serializerStatsToJson.serialize(statistics)
+    _input.pop(0)
 
-    print("Stats is serialized to JSON")
+    pcap_filepath = _input[0]
+    json_filepath = _input[1]
+
+    parser = PcapParser()
+    serializer = SerializerPcapToJson()
+
+    metadata = serializer.deserialize_from_file(json_filepath)
+    new_metadata = parser.signal_analyze(pcap_filepath, metadata)
+    
+    serializer.serialize_to_file(new_metadata, json_filepath)
 
 if(__name__ == "__main__"):
     main()

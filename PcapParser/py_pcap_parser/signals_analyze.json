@@ -1,0 +1,398 @@
+{
+  "mver": "0.1.1",
+  "uuid": "225d9407-10c1-11ee-aa5f-f02f741caea0",
+  "time": {
+    "start": "2023-06-22T08:52:22",
+    "finish": "2023-06-22T08:53:37"
+  },
+  "place": {
+    "country": "RU",
+    "ip4": [
+      "10.10.10.5"
+    ],
+    "ip6": [
+      "fe80::95bf:388b:4abd:2809"
+    ]
+  },
+  "tags": [],
+  "service": {
+    "name": "udemy"
+  },
+  "client": {
+    "type": "web",
+    "name": "udemy",
+    "os": "ubuntu",
+    "method": "bot",
+    "workflows": [
+      "browse",
+      "play_video"
+    ]
+  },
+  "tokens": [
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && tcp.port==47342 && ip.addr==52.210.13.95 && tcp.port==443",
+        "proto": {
+          "raw-ip-tcp": 21,
+          "raw-ip-tcp-tls": 14,
+          "raw-ip-tcp-tls-tcp.segments": 1
+        },
+        "tls-client_hello-sni": [
+          "sync-amazon.ads.yieldmo.com"
+        ],
+        "tls-server_hello-sn": [
+          "*.ads.yieldmo.com"
+        ],
+        "stats": {
+          "LengthStat": {
+            "min_length": 52,
+            "max_length": 1329,
+            "average_length": 265.75,
+            "median_length": 60.0
+          },
+          "TimeStat": {
+            "min_time": 0.004,
+            "max_time": 30136.783,
+            "average_time": 930.72,
+            "median_time": 0.24
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && tcp.port==45614 && ip.addr==52.85.239.142 && tcp.port==443",
+        "proto": {
+          "raw-ip-tcp": 14,
+          "raw-ip-tcp-tls": 4,
+          "raw-ip-tcp-tls-tcp.segments": 2
+        },
+        "tls-client_hello-sni": [
+          "www.datadoghq-browser-agent.com"
+        ],
+        "stats": {
+          "LengthStat": {
+            "min_length": 52,
+            "max_length": 1329,
+            "average_length": 291.15,
+            "median_length": 56.0
+          },
+          "TimeStat": {
+            "min_time": 0.001,
+            "max_time": 1519.934,
+            "average_time": 94.17,
+            "median_time": 0.37
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && udp.port==46467 && ip.addr==209.85.233.95 && udp.port==443",
+        "proto": {
+          "raw-ip-udp-data": 365
+        },
+        "stats": {
+          "LengthStat": {
+            "min_length": 50,
+            "max_length": 1278,
+            "average_length": 968.48,
+            "median_length": 1278
+          },
+          "TimeStat": {
+            "min_time": 0.005,
+            "max_time": 86.071,
+            "average_time": 2.17,
+            "median_time": 0.4
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && udp.port==49007 && ip.addr==35.190.10.96 && udp.port==443",
+        "proto": {
+          "raw-ip-udp-data": 172
+        },
+        "stats": {
+          "LengthStat": {
+            "min_length": 51,
+            "max_length": 1278,
+            "average_length": 420.13,
+            "median_length": 64.0
+          },
+          "TimeStat": {
+            "min_time": 0.003,
+            "max_time": 14017.698,
+            "average_time": 358.77,
+            "median_time": 7.12
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && udp.port==40524 && ip.addr==64.233.165.97 && udp.port==443",
+        "proto": {
+          "raw-ip-udp-data": 78
+        },
+        "stats": {
+          "LengthStat": {
+            "min_length": 52,
+            "max_length": 1278,
+            "average_length": 793.54,
+            "median_length": 1278.0
+          },
+          "TimeStat": {
+            "min_time": 0.008,
+            "max_time": 19058.73,
+            "average_time": 253.16,
+            "median_time": 0.23
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && udp.port==45929 && ip.addr==64.233.164.138 && udp.port==443",
+        "proto": {
+          "raw-ip-udp-data": 39
+        },
+        "stats": {
+          "LengthStat": {
+            "min_length": 49,
+            "max_length": 1278,
+            "average_length": 369,
+            "median_length": 78
+          },
+          "TimeStat": {
+            "min_time": 0.003,
+            "max_time": 17848.177,
+            "average_time": 962.89,
+            "median_time": 12.82
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && udp.port==51301 && ip.addr==35.190.10.96 && udp.port==443",
+        "proto": {
+          "raw-ip-udp-data": 35
+        },
+        "stats": {
+          "LengthStat": {
+            "min_length": 51,
+            "max_length": 1278,
+            "average_length": 481.51,
+            "median_length": 149
+          },
+          "TimeStat": {
+            "min_time": 0.006,
+            "max_time": 18671.908,
+            "average_time": 565.9,
+            "median_time": 0.71
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && udp.port==53386 && ip.addr==34.102.232.42 && udp.port==443",
+        "proto": {
+          "raw-ip-udp-data": 20
+        },
+        "stats": {
+          "LengthStat": {
+            "min_length": 49,
+            "max_length": 1278,
+            "average_length": 364.5,
+            "median_length": 86.0
+          },
+          "TimeStat": {
+            "min_time": 0.036,
+            "max_time": 24279.204,
+            "average_time": 2325.73,
+            "median_time": 2.69
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && udp.port==56189 && ip.addr==52.85.242.188 && udp.port==443",
+        "proto": {
+          "raw-ip-udp-data": 17
+        },
+        "stats": {
+          "LengthStat": {
+            "min_length": 71,
+            "max_length": 1480,
+            "average_length": 571.24,
+            "median_length": 119
+          },
+          "TimeStat": {
+            "min_time": 0.008,
+            "max_time": 23894.064,
+            "average_time": 1503.02,
+            "median_time": 0.13
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && udp.port==43918 && ip.addr==104.18.33.52 && udp.port==443",
+        "proto": {
+          "raw-ip-udp-data": 16
+        },
+        "stats": {
+          "LengthStat": {
+            "min_length": 52,
+            "max_length": 1278,
+            "average_length": 445.12,
+            "median_length": 95.0
+          },
+          "TimeStat": {
+            "min_time": 0.009,
+            "max_time": 53.919,
+            "average_time": 13.75,
+            "median_time": 0.27
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && udp.port==57472 && ip.addr==35.244.159.8 && udp.port==443",
+        "proto": {
+          "raw-ip-udp-data": 16
+        },
+        "stats": {
+          "LengthStat": {
+            "min_length": 52,
+            "max_length": 1278,
+            "average_length": 412.62,
+            "median_length": 169.5
+          },
+          "TimeStat": {
+            "min_time": 0.017,
+            "max_time": 175.383,
+            "average_time": 33.65,
+            "median_time": 4.47
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && udp.port==40744 && ip.addr==108.177.14.106 && udp.port==443",
+        "proto": {
+          "raw-ip-udp-data": 16
+        },
+        "stats": {
+          "LengthStat": {
+            "min_length": 52,
+            "max_length": 1278,
+            "average_length": 559.62,
+            "median_length": 130.0
+          },
+          "TimeStat": {
+            "min_time": 0.036,
+            "max_time": 24349.266,
+            "average_time": 1637.73,
+            "median_time": 0.41
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && udp.port==48210 && ip.addr==74.125.205.95 && udp.port==443",
+        "proto": {
+          "raw-ip-udp-data": 12
+        },
+        "stats": {
+          "LengthStat": {
+            "min_length": 52,
+            "max_length": 1278,
+            "average_length": 780.08,
+            "median_length": 1140.0
+          },
+          "TimeStat": {
+            "min_time": 0.008,
+            "max_time": 77.381,
+            "average_time": 20.51,
+            "median_time": 0.35
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && udp.port==59089 && ip.addr==239.255.255.250 && udp.port==1900",
+        "proto": {
+          "raw-ip-udp-ssdp": 4
+        },
+        "stats": {
+          "LengthStat": {
+            "min_length": 201,
+            "max_length": 201,
+            "average_length": 201,
+            "median_length": 201.0
+          },
+          "TimeStat": {
+            "min_time": 1005.39,
+            "max_time": 1008.06,
+            "average_time": 1006.82,
+            "median_time": 1007.0
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && udp.port==5353 && ip.addr==224.0.0.251 && udp.port==5353",
+        "proto": {
+          "raw-ip-udp-mdns": 3
+        },
+        "stats": {
+          "LengthStat": {
+            "min_length": 68,
+            "max_length": 68,
+            "average_length": 68,
+            "median_length": 68
+          },
+          "TimeStat": {
+            "min_time": 1005.916,
+            "max_time": 2003.143,
+            "average_time": 1504.53,
+            "median_time": 1504.53
+          }
+        }
+      }
+    },
+    {
+      "session": {
+        "filter": "ip.addr==10.10.10.5 && udp.port==57533 && ip.addr==64.233.164.138 && udp.port==443",
+        "proto": {
+          "raw-ip-udp-data": 2
+        },
+        "stats": {
+          "LengthStat": {
+            "min_length": 1278,
+            "max_length": 1278,
+            "average_length": 1278,
+            "median_length": 1278.0
+          },
+          "TimeStat": {
+            "min_time": 173.173,
+            "max_time": 173.173,
+            "average_time": 173.17,
+            "median_time": 173.17
+          }
+        }
+      }
+    }
+  ]
+}
