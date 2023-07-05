@@ -92,7 +92,10 @@ class PcapParser:
             signal = [pcap_file, wireshark_filter]
         
             stats = self.parse(signal)
-        
+            
+            if(stats == None):
+                continue
+
             session_index = sessions.index(session)
             metadata['tokens'][session_index]['session']['stats'] = stats
 

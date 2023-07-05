@@ -7,7 +7,7 @@ class PcapStatsEncoder(json.JSONEncoder):
 class SerializerPcapToJson:
     def serialize_to_file(self, data, json_filepath):
         with open(json_filepath, 'w') as f:
-            json.dump(data, f, indent=2, cls = PcapStatsEncoder)
+            json.dump(data, f, indent = 2, cls = PcapStatsEncoder)
     
     def deserialize_from_file(self, json_filepath):
         with open(json_filepath) as f:

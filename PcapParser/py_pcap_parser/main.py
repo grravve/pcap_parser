@@ -1,5 +1,3 @@
-import json
-import os
 import sys
 
 from pcap_parser import PcapParser
@@ -19,10 +17,7 @@ def main():
     metadata = serializer.deserialize_from_file(json_filepath)
     new_metadata = parser.signal_analyze(pcap_filepath, metadata)
     
-    json_path_split = os.path.splitext(json_filepath)
-    new_json_metadata_file = json_path_split[0] + "_edited" + json_path_split[1]
-    
-    serializer.serialize_to_file(new_metadata, new_json_metadata_file)
+    serializer.serialize_to_file(new_metadata, json_filepath)
 
 if(__name__ == "__main__"):
     main()
